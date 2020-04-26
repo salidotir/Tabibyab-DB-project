@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>doctor_main_window</class>
+ <widget class="QMainWindow" name="doctor_main_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="result_label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>731</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>click bottons to see info</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="see_profile_info_btn">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>500</y>
+      <width>201</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>see profile info</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="see_patients_info_btn">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>470</y>
+      <width>201</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>see patients info</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuedit">
+    <property name="title">
+     <string>edit</string>
+    </property>
+    <addaction name="actionedit_doctor_profile"/>
+    <addaction name="actionadd_insurance"/>
+    <addaction name="actiondelete_insurance"/>
+    <addaction name="actionedit_work_hour"/>
+   </widget>
+   <addaction name="menuedit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionedit_doctor_profile">
+   <property name="text">
+    <string>edit doctor profile</string>
+   </property>
+  </action>
+  <action name="actionadd_insurance">
+   <property name="text">
+    <string>add insurance</string>
+   </property>
+  </action>
+  <action name="actiondelete_insurance">
+   <property name="text">
+    <string>delete insurance</string>
+   </property>
+  </action>
+  <action name="actionedit_work_hour">
+   <property name="text">
+    <string>edit work hour</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

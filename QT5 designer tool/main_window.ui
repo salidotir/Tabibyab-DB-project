@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>781</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="set_appointment">
+    <property name="geometry">
+     <rect>
+      <x>644</x>
+      <y>490</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>get appointment</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="search_doctors">
+    <property name="geometry">
+     <rect>
+      <x>644</x>
+      <y>463</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>search doctors</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>520</y>
+      <width>251</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>follow your appointment by follow_code</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="appointment_id_input">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>520</y>
+      <width>201</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="follow_btn">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>520</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>follow</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menumy_orofile">
+    <property name="title">
+     <string>my profile</string>
+    </property>
+    <widget class="QMenu" name="menusee_my_appointments">
+     <property name="title">
+      <string>see my appointments</string>
+     </property>
+     <addaction name="actionmy_reservations"/>
+     <addaction name="actionmy_family_reservations"/>
+    </widget>
+    <widget class="QMenu" name="menusaved_doctors">
+     <property name="title">
+      <string>saved doctors</string>
+     </property>
+     <addaction name="actionview_saved_doctors"/>
+     <addaction name="actionadd_saved_doctors"/>
+    </widget>
+    <addaction name="actionshow"/>
+    <addaction name="actionedit"/>
+    <addaction name="actionadd_family_member"/>
+    <addaction name="separator"/>
+    <addaction name="menusee_my_appointments"/>
+    <addaction name="actionsee_my_family_appointments"/>
+    <addaction name="menusaved_doctors"/>
+   </widget>
+   <addaction name="menumy_orofile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionby_name">
+   <property name="text">
+    <string>by name</string>
+   </property>
+   <property name="statusTip">
+    <string>choose your doctor by name</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionby_family">
+   <property name="text">
+    <string>by family</string>
+   </property>
+   <property name="statusTip">
+    <string>choose your doctor by family</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionby_specialty">
+   <property name="text">
+    <string>by specialty</string>
+   </property>
+   <property name="statusTip">
+    <string>choose your doctor by specialty</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionby_place">
+   <property name="text">
+    <string>by place</string>
+   </property>
+   <property name="statusTip">
+    <string>choose your doctor by place</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionshow">
+   <property name="text">
+    <string>show</string>
+   </property>
+   <property name="statusTip">
+    <string>show profile</string>
+   </property>
+  </action>
+  <action name="actionedit">
+   <property name="text">
+    <string>edit</string>
+   </property>
+   <property name="statusTip">
+    <string>edit profile</string>
+   </property>
+  </action>
+  <action name="actionadd_family_member">
+   <property name="text">
+    <string>add family member</string>
+   </property>
+  </action>
+  <action name="actionsee_my_family_appointments">
+   <property name="text">
+    <string>see my family appointments</string>
+   </property>
+  </action>
+  <action name="actionmy_reservations">
+   <property name="text">
+    <string>my reservations</string>
+   </property>
+  </action>
+  <action name="actionmy_family_reservations">
+   <property name="text">
+    <string>my family reservations</string>
+   </property>
+  </action>
+  <action name="actionview_saved_doctors">
+   <property name="text">
+    <string>view saved doctors</string>
+   </property>
+  </action>
+  <action name="actionadd_saved_doctors">
+   <property name="text">
+    <string>add saved doctors</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
