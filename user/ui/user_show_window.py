@@ -1,0 +1,177 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'user_show_window.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.2
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+from db import dbms
+from db.dbms import *
+
+
+
+
+
+class Ui_user_show_window(object):
+    def setupUi(self, user_show_window):
+        user_show_window.setObjectName("user_show_window")
+        user_show_window.resize(800, 600)
+        self.centralwidget = QtWidgets.QWidget(user_show_window)
+        self.centralwidget.setObjectName("centralwidget")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(70, 53, 111, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(70, 110, 111, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(70, 170, 111, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(70, 240, 111, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_4.setFont(font)
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(self.centralwidget)
+        self.label_5.setGeometry(QtCore.QRect(70, 300, 111, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_5.setFont(font)
+        self.label_5.setObjectName("label_5")
+        self.label_7 = QtWidgets.QLabel(self.centralwidget)
+        self.label_7.setGeometry(QtCore.QRect(70, 360, 111, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_7.setFont(font)
+        self.label_7.setObjectName("label_7")
+        self.label_6 = QtWidgets.QLabel(self.centralwidget)
+        self.label_6.setGeometry(QtCore.QRect(70, 420, 111, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_6.setFont(font)
+        self.label_6.setObjectName("label_6")
+        self.phone_number = QtWidgets.QLabel(self.centralwidget)
+        self.phone_number.setGeometry(QtCore.QRect(230, 50, 301, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.phone_number.setFont(font)
+        self.phone_number.setObjectName("phone_number")
+        self.first_name = QtWidgets.QLabel(self.centralwidget)
+        self.first_name.setGeometry(QtCore.QRect(230, 110, 301, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.first_name.setFont(font)
+        self.first_name.setObjectName("first_name")
+        self.last_name = QtWidgets.QLabel(self.centralwidget)
+        self.last_name.setGeometry(QtCore.QRect(230, 170, 301, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.last_name.setFont(font)
+        self.last_name.setObjectName("last_name")
+        self.birth_day = QtWidgets.QLabel(self.centralwidget)
+        self.birth_day.setGeometry(QtCore.QRect(230, 240, 301, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.birth_day.setFont(font)
+        self.birth_day.setObjectName("birth_day")
+        self.insurance = QtWidgets.QLabel(self.centralwidget)
+        self.insurance.setGeometry(QtCore.QRect(230, 350, 301, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.insurance.setFont(font)
+        self.insurance.setObjectName("insurance")
+        self.gender = QtWidgets.QLabel(self.centralwidget)
+        self.gender.setGeometry(QtCore.QRect(230, 410, 301, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.gender.setFont(font)
+        self.gender.setObjectName("gender")
+        self.password = QtWidgets.QLabel(self.centralwidget)
+        self.password.setGeometry(QtCore.QRect(230, 300, 301, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.password.setFont(font)
+        self.password.setObjectName("password")
+        self.return_to_main_btn = QtWidgets.QPushButton(self.centralwidget)
+        self.return_to_main_btn.setGeometry(QtCore.QRect(610, 470, 75, 23))
+        self.return_to_main_btn.setObjectName("return_to_main_btn")
+        user_show_window.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(user_show_window)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
+        self.menubar.setObjectName("menubar")
+        user_show_window.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(user_show_window)
+        self.statusbar.setObjectName("statusbar")
+        user_show_window.setStatusBar(self.statusbar)
+
+        self.retranslateUi(user_show_window)
+        QtCore.QMetaObject.connectSlotsByName(user_show_window)
+
+        self.return_to_main_btn.clicked.connect(lambda : self.Clicked())
+
+
+
+    def retranslateUi(self, user_show_window):
+        _translate = QtCore.QCoreApplication.translate
+        user_show_window.setWindowTitle(_translate("user_show_window", "MainWindow"))
+        self.label.setText(_translate("user_show_window", "phone number:"))
+        self.label_2.setText(_translate("user_show_window", "first name:"))
+        self.label_3.setText(_translate("user_show_window", "last name:"))
+        self.label_4.setText(_translate("user_show_window", "birth day:"))
+        self.label_5.setText(_translate("user_show_window", "password:"))
+        self.label_7.setText(_translate("user_show_window", "insurance:"))
+        self.label_6.setText(_translate("user_show_window", "gender:"))
+        self.phone_number.setText(_translate("user_show_window", "data"))
+        self.first_name.setText(_translate("user_show_window", "data"))
+        self.last_name.setText(_translate("user_show_window", "data"))
+        self.birth_day.setText(_translate("user_show_window", "data"))
+        self.insurance.setText(_translate("user_show_window", "data"))
+        self.gender.setText(_translate("user_show_window", "data"))
+        self.password.setText(_translate("user_show_window", "data"))
+        self.return_to_main_btn.setText(_translate("user_show_window", "show "))
+
+    def Clicked(self):
+        conn = create_connection("db.sqlite")
+        print(dbms.current_logged_in)
+        listi = show_profile(conn,dbms.current_logged_in)
+        print(listi)
+        self.phone_number.setText(listi[0])
+        self.phone_number.adjustSize()
+        self.first_name.setText(listi[1])
+        self.first_name.adjustSize()
+        self.last_name.setText(listi[2])
+        self.last_name.adjustSize()
+        self.birth_day.setText(listi[3])
+        self.birth_day.adjustSize()
+        self.password.setText(listi[4])
+        self.password.adjustSize()
+        self.insurance.setText(listi[5])
+        self.insurance.adjustSize()
+        self.gender.setText(listi[6])
+        self.gender.adjustSize()
+        close_connection(conn)
+
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    user_show_window = QtWidgets.QMainWindow()
+    ui = Ui_user_show_window()
+    ui.setupUi(user_show_window)
+    user_show_window.show()
+    sys.exit(app.exec_())
